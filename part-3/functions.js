@@ -1,4 +1,4 @@
-const perf = require('execution-time')();
+const perf = require("execution-time")();
 
 class AddCache {
   constructor() {
@@ -51,14 +51,17 @@ class AddCache {
   }
 }
 
-let testArr1 = [1,2,3,4,5,6,-7,-8,-5]
-let testArr2 = [1,2,3,4,5,6,-7,-8,-9]
+let testArr1 = [1, 2, 3, 4, 5, 6, -7, -8, -5];
+let testArr2 = [1, 2, 3, 4, 5, 6, -7, -8, -9];
 
-let analysis = new AddCache()
+let analysis = new AddCache();
 
-console.log('Add to Zero?:', analysis.sumZero(testArr1)) //Should return true
-console.log('Add to Zero?:',analysis.sumZero(testArr2)) //Should return false
-console.log('Unique Characters?:',analysis.uniqueChar('Monday')) //Should return true
-console.log('Unique Characters?:',analysis.uniqueChar('Moonday')) //Should return false
-console.log('Is Pangram?:',analysis.isPangram('The quick brown fox jumps over the lazy dog!')) //Should return false
-console.log('Is Pangram?:',analysis.isPangram('I like cats, but not mice')) //Should return false
+console.log("Add to Zero?:", analysis.sumZero(testArr1)); //Should return true
+console.log("Add to Zero?:", analysis.sumZero(testArr2)); //Should return false
+console.log("Unique Characters?:", analysis.uniqueChar("Monday")); //Should return true
+console.log("Unique Characters?:", analysis.uniqueChar("Moonday")); //Should return false
+console.log(
+  "Is Pangram?:",
+  analysis.isPangram("The quick brown fox jumps over the lazy dog!")
+); //Should return false
+console.log("Is Pangram?:", analysis.isPangram("I like cats, but not mice")); //Should return false
