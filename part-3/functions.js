@@ -60,8 +60,5 @@ console.log("Add to Zero?:", analysis.sumZero(testArr1)); //Should return true
 console.log("Add to Zero?:", analysis.sumZero(testArr2)); //Should return false
 console.log("Unique Characters?:", analysis.uniqueChar("Monday")); //Should return true
 console.log("Unique Characters?:", analysis.uniqueChar("Moonday")); //Should return false
-console.log(
-  "Is Pangram?:",
-  analysis.isPangram("The quick brown fox jumps over the lazy dog!")
-); //Should return false
+console.log("Is Pangram?:", analysis.isPangram("The quick brown fox jumps over the lazy dog!")); //Should return false
 console.log("Is Pangram?:", analysis.isPangram("I like cats, but not mice")); //Should return false
